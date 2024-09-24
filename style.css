@@ -1,0 +1,143 @@
+/* --- Fonts --- */
+
+* {
+  font-family: "Poppins", sans-serif;
+  color: rgb(44, 62, 80);
+}
+
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3,
+h4,
+.h4,
+h5,
+.h5 {
+  font-family: "Poppins", sans-serif;
+  color: rgb(44, 62, 80);
+}
+
+/* --- Colors --- */
+
+.color-whiteS {
+  color: whitesmoke !important;
+}
+.bg-dark {
+  background-color: rgb(33, 37, 41);
+}
+.color-azzurro {
+  color: #03a9f4 !important;
+}
+.color-blacks {
+  color: rgb(30, 33, 36);
+}
+.text-green {
+  color: rgb(0, 255, 0);
+}
+.text-red {
+  color: rgb(255, 0, 0);
+}
+.text-size {
+  font-size: 5rem;
+}
+.text-size1 {
+  font-size: 4rem;
+}
+
+/* Body */
+
+body {
+  /* background-color: rgb(245, 245, 240); */
+}
+
+.input-rubrica {
+  width: 460px;
+  border-radius: 5px;
+  padding: 2px;
+  border: 2px solid rgb(189, 195, 199);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  background-color: rgb(242, 244, 248);
+}
+.rubricaSOPRA {
+  height: 60px;
+  border-radius: 20px;
+  border: 2px solid rgb(189, 195, 199);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  background-color: rgb(242, 244, 248);
+}
+.rubricaSX {
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
+  border: 2px solid rgb(189, 195, 199);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  background-color: rgb(242, 244, 248);
+}
+.rubricaDX {
+  max-width: 100%;
+  min-height: 300px;
+  border-radius: 20px;
+  border: 2px solid rgb(189, 195, 199);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  background-color: rgb(242, 244, 248);
+}
+.buttonn {
+  border-radius: 20px;
+  border: 2px solid rgb(189, 195, 199);
+  box-shadow: 1px 1px 7px rgb(229, 231, 235);
+  background-color: rgb(250, 190, 88);
+  width: 80px;
+  transition: 0.4s;
+  color: rgb(44, 62, 80);
+}
+.buttonn:hover {
+  background-color: rgb(224, 165, 77);
+  color: rgb(44, 62, 80);
+  font-weight: 600;
+}
+.cardContatto {
+  margin: 20px 5px 20px 5px;
+  height: 150px;
+  width: 830px;
+  border-radius: 20px;
+  border: 2px solid rgb(189, 195, 199);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  background-color: rgb(242, 244, 248);
+}
+span {
+  margin: 0;
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+}
+.buttonnSX {
+  border-radius: 20px;
+  border: 2px solid rgb(189, 195, 199);
+  box-shadow: 1px 1px 7px rgb(229, 231, 235);
+  background-color: rgb(250, 190, 88);
+  width: 170px;
+  height: 100px;
+  transition: 0.4s;
+  color: rgb(44, 62, 80);
+  font-weight: 600;
+}
+.buttonnSX:hover {
+  background-color: rgb(224, 165, 77);
+  color: rgb(44, 62, 80);
+  font-weight: 800;
+}
+.iconS {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  transition: 0.4s;
+}
+.iconS:hover {
+  background-color: rgb(250, 190, 88);
+}
