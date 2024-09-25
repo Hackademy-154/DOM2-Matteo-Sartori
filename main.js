@@ -51,10 +51,13 @@ let rubrica = {
 
   // Remove Contact
   removeContact: function (removedName) {
-    let names = this.contacts.map((el) => el.name.toLowerCase());
-    let index = names.indexOf(removedName.toLowerCase());
-    if (index > -1) {
-      this.contacts.splice(index, 1);
+    let lowerCaseName = removedName.toLowerCase();
+    let filteredContacts = this.contacts.filter(
+      (el) => el.name.toLowerCase() !== lowerCaseName
+    );
+
+    if (filteredContacts.length !== this.contacts.length) {
+      this.contacts = filteredContacts;
       this.showHideContacts(this.contacts);
       showContactButton.innerText = "Nascondi rubrica";
     } else {
@@ -90,5 +93,30 @@ addButton.addEventListener("click", () => {
     inputName.value = "";
     inputPhone.value = "";
     alert("Compila tutti i campi");
+  }
+});
+
+// Remove Contact Event
+removeButton.addEventListener("click", () => {
+  if (inputName.value !== "" && inputPhone.value !== "") {
+    let originalLength = rubrica.contacts.length;
+
+    rubrica.contacts = rubrica.contacts.filter(
+      (contact) =>
+        contact.name.toLowerCase() !== inputName.value.toLowerCase() ||
+        contact.phone !== inputPhone.value
+    );
+
+    if (rubrica.contacts.length < originalLength) {
+      rubrica.showHideContacts();
+      alert("Contatto rimosso!");
+    } else {
+      alert("Contatto non trovato.");
+    }
+
+    inputName.value = "";
+    inputPhone.value = "";
+  } else {
+    alert("Compila sia il nome che il telefono per rimuovere il contatto.");
   }
 });
